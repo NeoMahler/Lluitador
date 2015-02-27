@@ -33,7 +33,6 @@ def acceptar(phenny, input):
         jugadors.append(input.nick)
         segon = input.nick
         phenny.say(u"Has acceptat el desafiament")
-        phenny.say(str(jugadors))
         instruccions(phenny, input)
         return
     else:
@@ -108,7 +107,6 @@ def final(phenny, input):
     global segon
     global jugadors
     phenny.say(guanyador + u" ha \x02guanyat\x02 a " + perdedor + ". Moltes felicitats!!")
-    phenny.write(['KICK'], perdedor + u" Mala sort... has perdut! :P")
     del jugadors[:]
     torn = None
     desafiador = None
