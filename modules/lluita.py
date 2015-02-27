@@ -106,6 +106,8 @@ def final(phenny, input):
     global desafiador
     global segon
     global jugadors
+    global vida1
+    global vida2
     phenny.say(guanyador + u" ha \x02guanyat\x02 a " + perdedor + ". Moltes felicitats!!")
     del jugadors[:]
     torn = None
@@ -113,4 +115,6 @@ def final(phenny, input):
     segon = None
     guanyador = None
     perdedor = None
+    vida1 = 100
+    vida2 = 100
     return
